@@ -7,7 +7,10 @@
  *let adulto: boolean = true;
  *let simbolo: symbol = Symbol('symbol');
  *let big: bigint = 10n;
+ nesse caso vemos se foi inferido um type ou se esta como any,
+ ai sim devemos fazer a annotation
  */
+
 
 //Array
 let arrayNumbers: Array<number> = [1,2,3];
@@ -31,5 +34,6 @@ function soma(x: number, y: number): number {
 //inferencia de type
 const result = soma(2, 2);
 //passando parametros por relise
-const soma2: (x: number, y: number) => number = (x, y) => return x + y;
-
+const soma2: (x: number, y: number) => number = (x, y) => {
+  return x + y;
+}
